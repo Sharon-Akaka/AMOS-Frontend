@@ -20,6 +20,7 @@
 
 .textarea-input {
     margin: 10px;
+    resize: none;
 }
 
 .submit-btn {
@@ -44,15 +45,18 @@
     border: 2px solid black;
     padding: 10px;
 }
+
 .card-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;  
   align-items: center;
 }
+
 .card-title h2{
     margin: 0;
 }
+
 .author-txt {
     color: grey;
     font-style: italic;
