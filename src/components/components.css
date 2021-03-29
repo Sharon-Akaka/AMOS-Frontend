@@ -5,3 +5,27 @@
 }
 
 /* INPUT FORM */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 20px;
+}
+
+.input-container input {
+    margin: 10px;
+}
+
+.textarea-input {
+    margin: 10px;
+}
+
+.submit-btn {
+    margin: 10px;
+}
+
+/* Resource Card */
+.resource-card-container {
+    margin: 10px;
+    border: 2px solid black;
+}

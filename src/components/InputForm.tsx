@@ -3,11 +3,12 @@ import './components.css';
 
 export default function InputForm() {
     return(
-        <div>
-            <input placeholder='Title'></input>
-            <input placeholder='Author'></input>
-            <input placeholder='URL'></input>
-            <textarea placeholder='Description'></textarea>
+        <div className='input-container'>
+            <input type="text" placeholder='Title'/>
+            <input type="text" placeholder='Author'/>
+            <input type="text" placeholder='URL'/>
+            <textarea className='textarea-input' placeholder='Description'></textarea>
+            <button className='submit-btn'>Submit</button>
         </div>
     )
 }

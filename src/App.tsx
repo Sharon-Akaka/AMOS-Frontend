@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import AllResources from './components/AllResources';
 import Header from './components/Header';
 import InputForm from './components/InputForm';
 
@@ -10,6 +11,7 @@ function App() {
         <div className="App">
             <Header />
             <InputForm />
+            <AllResources />
         </div>
     );
 }
