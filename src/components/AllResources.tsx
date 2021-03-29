@@ -3,8 +3,8 @@ import ResourceCard from './ResourceCard';
 
 export default function AllResources() {
     return (
-        <div>
-            <input type="text" placeholder=""/>
+        <div className='all-resources-container'>
+            <input type="text" placeholder="Searchbar" className="search-bar"/>
             <ResourceCard />
         </div>
     )

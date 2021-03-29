@@ -1,10 +1,12 @@
 /* HEADER */
+
 .navBar {
     background-color: #edf0f2;
     padding: 20px;
 }
 
 /* INPUT FORM */
+
 .input-container {
     display: flex;
     flex-direction: column;
@@ -24,8 +26,34 @@
     margin: 10px;
 }
 
+/* All resources container */
+
+.search-bar {
+    margin: 10px;
+}
+
+.all-resources-container {
+    padding: 20px;
+    width: 70%;
+}
+
 /* Resource Card */
+
 .resource-card-container {
     margin: 10px;
     border: 2px solid black;
+    padding: 10px;
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+  align-items: center;
+}
+.card-title h2{
+    margin: 0;
+}
+.author-txt {
+    color: grey;
+    font-style: italic;
 }

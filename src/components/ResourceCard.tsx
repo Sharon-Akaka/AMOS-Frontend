@@ -12,8 +12,11 @@ interface IData {
 export default function ResourceCard(props: IResourceCard) {
     return (
         <div className='resource-card-container'>
+            <div className='card-title'>
             <h2>Some Title</h2>
-            <p>Author</p>
+            <p className='author-txt'>Author</p>
+            </div>
+            
             <p>Description</p>
         </div>
     )
