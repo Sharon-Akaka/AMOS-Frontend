@@ -18,6 +18,15 @@
     margin: 10px;
 }
 
+.input-container label {
+    margin-left: 10px;
+}
+.input-container hr {
+    width: 90%;
+    border: 1px solid grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .textarea-input {
     margin: 10px;
     resize: none;
