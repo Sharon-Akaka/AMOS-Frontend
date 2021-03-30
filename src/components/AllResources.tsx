@@ -6,6 +6,7 @@ interface IAllResources {
     allResources: IData[],
     setGetAllResources: React.Dispatch<React.SetStateAction<IData[]>>
 }
+
 export default function AllResources(props: IAllResources) {
     const [searchInput, setSearchInput] = useState('');
 

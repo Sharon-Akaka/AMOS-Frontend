@@ -28,6 +28,7 @@ export default function ResourceCard(props: IResourceCard) {
                 <p className='author-txt'>{data.author}</p>
             </div>
             <p>{data.description}</p>
+            <p className='categories-txt'>Categories: {data.cat_tags}</p>
         </div>
     )
 }
