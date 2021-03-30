@@ -16,7 +16,7 @@ export default function InputForm() {
                 description: descriptionInput
             }
             console.log(body)
-            await fetch("", {
+            await fetch("https://study-resources-app.herokuapp.com/", {
                 method: "POST",
                 body: JSON.stringify(body),
                 headers: {

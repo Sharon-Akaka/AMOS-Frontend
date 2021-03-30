@@ -31,8 +31,12 @@
 
 .search-bar {
     margin: 10px;
+    width: 50%;
+    max-width: 400px;
 }
-
+.search-btn {
+    margin-left: 3px;
+}
 .all-resources-container {
     padding: 20px;
     width: 70%;

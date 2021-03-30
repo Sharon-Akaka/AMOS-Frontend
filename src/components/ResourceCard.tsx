@@ -11,11 +11,11 @@ export interface IData {
     author: string,
     url: string,
     description: string,
-    cat_tags: null,
-    content_type: string,
-    recommender: string,
+    cat_tags?: string[],
+    content_type?: string,
+    recommender?: string,
     is_faculty: boolean,
-    mark_stage: string,
+    mark_stage?: string,
     was_used: boolean
 }
 

@@ -26,18 +26,20 @@ const dummyData = [{
 function App() {
     const [getAllResources, setGetAllResources] = useState<IData[]>([])
 
+
     async function fetchAllResources() {
-        const res = await fetch("http:/");
+        const res = await fetch("https://study-resources-app.herokuapp.com/");
         const jsonData = await res.json();
         setGetAllResources(jsonData)
     }
     useEffect(() => { fetchAllResources() }, [])
+
     return (
         <div className="App">
             <Header />
             <div className="content-container">
                 <InputForm />
-                <AllResources allResources={getAllResources} />
+                <AllResources allResources={getAllResources} setGetAllResources={setGetAllResources}/>
             </div>
         </div>
     );
