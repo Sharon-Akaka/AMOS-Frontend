@@ -57,11 +57,26 @@
 /* Resource Card */
 
 .resource-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
     margin: 10px;
     border: 2px solid black;
     padding: 10px;
 }
-
+.voting-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+}
+.voting-container li {
+    margin: 4px;
+}
+.card-content{
+    width: 85%;
+}
 .card-title {
   display: flex;
   flex-direction: row;
