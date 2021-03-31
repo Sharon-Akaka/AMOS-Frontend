@@ -22,7 +22,7 @@ function App() {
             <Header />
             <div className="content-container">
                 <InputForm fetchAllResources={fetchAllResources}/>
-                <AllResources allResources={getAllResources} setGetAllResources={setGetAllResources}/>
+                <AllResources allResources={getAllResources} setGetAllResources={setGetAllResources} fetchAllResources={fetchAllResources}/>
             </div>
         </div>
     );

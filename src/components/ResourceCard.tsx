@@ -4,6 +4,7 @@ import './components.css';
 
 interface IResourceCard {
     data: IData,
+    fetchAllResources:()=> Promise<void>
 }
 
 export interface IData {
@@ -23,7 +24,7 @@ export interface IData {
 
 export default function ResourceCard(props: IResourceCard) {
     // const [] = useState()
-    const { data } = props
+    const { data, fetchAllResources } = props
 
     async function handleUpVote() {
         await fetch(`https://study-resources-app.herokuapp.com/upvote/${data.id}`, {
@@ -32,6 +33,7 @@ export default function ResourceCard(props: IResourceCard) {
                 'Content-Type': 'application/json'
             }
         })
+        fetchAllResources()
     }
     async function handleDownVote() {
         await fetch(`https://study-resources-app.herokuapp.com/downvote/${data.id}`, {
@@ -40,13 +42,14 @@ export default function ResourceCard(props: IResourceCard) {
                 'Content-Type': 'application/json'
             }
         })
+        fetchAllResources()
     }
     console.log(data.url);
     return (
         <div className='resource-card-container'>
             <div className='voting-container'>
                 <li><button onClick={handleUpVote}>⬆️</button></li>
-                <li>number</li>
+                <li>{data.vote}</li>
                 <li><button onClick={handleDownVote}>⬇️</button></li>
             </div>
             <div className='card-content'>
