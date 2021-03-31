@@ -5,6 +5,7 @@ import ResourceCard, { IData } from "./ResourceCard";
 interface IAllResources {
   allResources: IData[];
   setGetAllResources: React.Dispatch<React.SetStateAction<IData[]>>;
+  fetchAllResources: () => Promise<void>
 }
 
 export default function AllResources(props: IAllResources) {
@@ -54,7 +55,7 @@ console.log(props.allResources)
         )}
       </select>
       {props.allResources.map((item) => (
-        <ResourceCard data={item} />
+        <ResourceCard data={item} fetchAllResources={props.fetchAllResources} />
       ))}
     </div>
   );

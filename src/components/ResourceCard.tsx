@@ -1,4 +1,3 @@
-import { NONAME } from "node:dns";
 import React from "react";
 import './components.css';
 
@@ -13,7 +12,7 @@ export interface IData {
     author: string,
     url: string,
     description: string,
-    cat_tags?: string[],
+    cat_tags?: string,
     content_type?: string,
     recommender?: string,
     is_faculty: boolean,
@@ -55,7 +54,7 @@ export default function ResourceCard(props: IResourceCard) {
             <div className='card-content'>
                 <div className='card-title'>
                     {/* Find long term fix to the http issue */}
-                    <h2><a href={"https://" + data.url} target="_blank">{data.title}</a></h2>
+                    <h2><a href={"https://" + data.url} target="_blank" rel="noopener noreferrer">{data.title}</a></h2>
                     <p className='author-txt'>{data.author}</p>
                 </div>
                 <p>{data.description}</p>
